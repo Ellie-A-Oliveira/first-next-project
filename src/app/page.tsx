@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import styles from './page.module.css'
+import imgsrc from "./marguerite-729510_640.jpg";
 
 export default function Home() {
   return (
@@ -16,14 +17,6 @@ export default function Home() {
             rel="noopener noreferrer"
           >
             By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
           </a>
         </div>
       </div>
@@ -39,6 +32,24 @@ export default function Home() {
         />
       </div>
 
+        
+      <Image
+              src={imgsrc}
+              alt="Vercel Logo"
+              className={styles.vercelLogo}
+              width={500}
+              priority
+              quality={80}
+            />
+            <p>Teste</p>
+            <Image
+              src={imgsrc}
+              alt="Vercel Logo"
+              className={styles.vercelLogo}
+              width={500}
+              priority
+              quality={20}
+            />
       <div className={styles.grid}>
         <a
           href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
